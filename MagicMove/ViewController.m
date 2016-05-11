@@ -8,13 +8,20 @@
 
 #import "ViewController.h"
 #import "TableViewCell.h"
+#import "DetailViewController.h"
+#import "MagicMoveTransition.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
+
 
 @end
 
 @implementation ViewController
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.delegate = self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,7 +38,17 @@
     [cell loadSubView];
     return cell;
 }
-
+- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                            animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                         fromViewController:(UIViewController *)fromVC
+                                                           toViewController:(UIViewController *)toVC{
+    if ([toVC isKindOfClass:[DetailViewController class]]) {
+        MagicMoveTransition * transition = [[MagicMoveTransition alloc]init];
+        return transition;
+    }else{
+        return nil;
+    }
+}
 
 
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96194D1E1CE2C01800584406 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96194D1D1CE2C01800584406 /* DetailViewController.m */; };
+		96194D211CE2C18900584406 /* MagicMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 96194D201CE2C18900584406 /* MagicMoveTransition.m */; };
 		E2E201311CE232C300BCCFE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E201301CE232C300BCCFE8 /* main.m */; };
 		E2E201341CE232C300BCCFE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E201331CE232C300BCCFE8 /* AppDelegate.m */; };
 		E2E201371CE232C300BCCFE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E201361CE232C300BCCFE8 /* ViewController.m */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96194D1C1CE2C01800584406 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		96194D1D1CE2C01800584406 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		96194D1F1CE2C18900584406 /* MagicMoveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveTransition.h; sourceTree = "<group>"; };
+		96194D201CE2C18900584406 /* MagicMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveTransition.m; sourceTree = "<group>"; };
 		E2E2012C1CE232C300BCCFE8 /* MagicMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E201301CE232C300BCCFE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2E201321CE232C300BCCFE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +71,10 @@
 				E2E201331CE232C300BCCFE8 /* AppDelegate.m */,
 				E2E201351CE232C300BCCFE8 /* ViewController.h */,
 				E2E201361CE232C300BCCFE8 /* ViewController.m */,
+				96194D1C1CE2C01800584406 /* DetailViewController.h */,
+				96194D1D1CE2C01800584406 /* DetailViewController.m */,
+				96194D1F1CE2C18900584406 /* MagicMoveTransition.h */,
+				96194D201CE2C18900584406 /* MagicMoveTransition.m */,
 				E2E201461CE232DD00BCCFE8 /* TableViewCell.h */,
 				E2E201471CE232DD00BCCFE8 /* TableViewCell.m */,
 				E2E201381CE232C300BCCFE8 /* Main.storyboard */,
@@ -154,6 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96194D1E1CE2C01800584406 /* DetailViewController.m in Sources */,
+				96194D211CE2C18900584406 /* MagicMoveTransition.m in Sources */,
 				E2E201371CE232C300BCCFE8 /* ViewController.m in Sources */,
 				E2E201481CE232DD00BCCFE8 /* TableViewCell.m in Sources */,
 				E2E201341CE232C300BCCFE8 /* AppDelegate.m in Sources */,
@@ -306,6 +318,7 @@
 				E2E201451CE232C300BCCFE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
